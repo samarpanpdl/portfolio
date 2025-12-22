@@ -2,7 +2,7 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
 const AnimatedNumbers = dynamic(() => {
-    return import('./AnimatedNumbers')}, {ssr:false}); 
+    return import('react-animated-numbers')}, {ssr:false}); 
 const achievementlist = [
     {
         metric: "Projects",

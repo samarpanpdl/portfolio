@@ -2,11 +2,16 @@
 import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation';
+import {motion} from "framer-motion";
 const UpSection = () => {
   return (
     <section>
         <div className='grid grid-cols-1 lg:grid-cols-12 place-self-center gap-8 lg:gap-16 py-16 '>
-            <div className='col-span-8 place-self-center text-center sm:text-left justify-self-start'>
+            <motion.div 
+                initial = {{opacity:0, scale:0.5}}
+                animate = {{opacity:1, scale:1}}
+                transition={{duration:0.5}}
+            className='col-span-8 place-self-center text-center sm:text-left justify-self-start'>
                 <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold'>
                     <span>Hello, I am </span>
                     <br/>
@@ -33,13 +38,17 @@ const UpSection = () => {
                     <button className='px-6 py-3 w-full sm:w-fit rounded-full mx-4 bg-white hover:bg-slate-200 text-black'>Hire me</button>
                     <button className='px-6 py-3 w-full sm:w-fit rounded-full mx-4 bg-transparent hover:bg-slate-800 text-white border border-white mt-3'>Download CV</button>
                 </div>
-            </div>
+            </motion.div>
 
-            <div className='col-span-4'>
+            <motion.div
+                initial = {{opacity:0, scale:0.5}}
+                animate = {{opacity:1, scale:1}}
+                transition={{duration:0.5}}
+            className='col-span-4'>
                 <div className='rounded-full bg-[#181818] w-[500px] h-[500px] sm: h-100px] relative'>
                 <Image src="/images/profile.jpg" alt="image" width={250} height={250} className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2' />
                 </div>
-            </div>
+            </motion.div>
 
         </div>
     </section>

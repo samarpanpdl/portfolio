@@ -39,8 +39,7 @@ const EmailSection = () => {
             <h5 className='text-xl font-bold text-white my-2'>Let's Connect</h5>
             <p className='text-[#ADB7BE] mb-4 max-w-md'>
                 {" "}
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid deleniti in, perspiciatis odit debitis animi et consectetur dignissimos dolore doloremque, facilis amet saepe nihil maiores hic eaque veritatis excepturi labore expedita aspernatur libero quisquam. Commodi dolore at ex tempora exercitationem vel? Sit labore, doloremque commodi et unde illo voluptates asperiores sapiente magnam. Tempore.
-
+                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out to me through the form or via my social media channels.
             </p>
             <div className='socials flex flex-row gap-2'>
                 <Link href={"httpgithub.com/samarpanpdl/"}>

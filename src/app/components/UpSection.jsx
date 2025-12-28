@@ -32,8 +32,8 @@ const UpSection = () => {
                         />
                     </h1>
                 <p className='text-[#ADB7BE] text-base lg:text-lg lg:text-xl mb-6'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deleniti dolores architecto tempore aut neque, temporibus error molestiae quidem necessitatibus repudiandae minus? Excepturi pariatur hic error reiciendis id? Ullam, quo?
-                </p>
+                                    I a motivated and skilled developer with expertise in Python, Django, and web development. I am passionate about creating efficient and scalable solutions to complex problems. With a strong foundation in programming and a keen eye for detail, I strive to deliver high-quality code and innovative applications.
+                    </p>
                 <div>
                     <button className='px-6 py-3 w-full sm:w-fit rounded-full mx-4 bg-white hover:bg-slate-200 text-black'>Hire me</button>
                     <button className='px-6 py-3 w-full sm:w-fit rounded-full mx-4 bg-transparent hover:bg-slate-800 text-white border border-white mt-3'>Download CV</button>

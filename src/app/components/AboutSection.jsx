@@ -9,37 +9,36 @@ const TAB_DATA = [
         id: 'skills',
         content:(
             <ul>
-                <li>Node.js</li>
-                <li>Next.js</li>
-                <li>React.js</li>
-                <li>Python</li>
-                <li>Django</li>
+                
+                <li>Python</li>                
                 <li>JavaScript</li>
                 <li>HTML & CSS</li>
-                <li>SQL & NoSQL Databases</li>
-                <li>Git & Version Control</li>
-                <li>RESTful APIs</li>
+                
                 
             </ul>
         )
     },
     {
-        title: 'Education',
-        id: 'education',
+        title: 'Framework',
+        id: 'framework',
         content:(
             <ul>
-                <li>BSc. Computer Science</li>
-                <li>Kathmandu University</li>
+                <li>React</li>
+                <li>Next js</li>
+                <li>Django</li>
+
             </ul>
         )
     },
     {
-        title: 'Certification',
-        id: 'certification',
+        title: 'Others',
+        id: 'others',
         content:(
             <ul>
-                <li>Full Stack Web Development - Coursera</li>
-                <li>Python for Everybody - edX</li>     
+                <li>SQL & NoSQL Databases</li>
+                <li>Git & Version Control</li>
+                <li>RESTful APIs</li>
+                <li></li>   
             </ul>
         )
     }
@@ -75,8 +74,8 @@ const AboutSection = () => {
                 </p>
             <div className='flex flex-row justify-start mt-8'>
                 <TabButton selectTab={()=> handleTabChange("skills")} active={tab==="skills"}>{" "}Skills{" "}</TabButton>
-                <TabButton selectTab={()=> handleTabChange("education")} active={tab==="education"}>{" "}Education{" "}</TabButton>
-                <TabButton selectTab={()=> handleTabChange("certification")} active={tab==="certification"}>{" "}Certification{" "}</TabButton>
+                <TabButton selectTab={()=> handleTabChange("framework")} active={tab==="framework"}>{" "}Framework{" "}</TabButton>
+                <TabButton selectTab={()=> handleTabChange("others")} active={tab==="others"}>{" "}Others{" "}</TabButton>
             </div>
             <div className='mt-8'>
                 {TAB_DATA.find((t)=> t.id.toLowerCase() === tab.toLowerCase())?.content}

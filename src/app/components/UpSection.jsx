@@ -66,7 +66,14 @@ const UpSection = () => {
           transition={{ duration: 0.5 }}
           className='col-span-4 place-self-center mt-4 lg:mt-0'
         >
-          <div className='rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative overflow-hidden border-4 border-slate-800'>
+          <div className='
+          rounded-full bg-[#181818] 
+        w-[250px] h-[250px] 
+        lg:w-[400px] lg:h-[400px] 
+        /* Margin logic: */
+        ml-30         /* No margin on mobile */
+        lg:ml-[30px]    /* Specific margin only on large screens */
+        relative overflow-hidden border-4 border-slate-800'>
             <Image 
               src="/images/profile2.jpg" 
               alt="Aashutosh Profile" 

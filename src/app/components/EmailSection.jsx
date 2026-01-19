@@ -42,11 +42,11 @@ const EmailSection = () => {
                 I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out to me through the form or via my social media channels.
             </p>
             <div className='socials flex flex-row gap-2'>
-                <Link href={"httpgithub.com/samarpanpdl/"}>
+                <Link href={"http://github.com/samarpanpdl/"}>
                     <Image src={GithubIcon} alt='GithubIcon'/>
                     
                 </Link> 
-                <Link href={"linkedin.com/aashutosh-poudel/"}>
+                <Link href={"http://linkedin.com/in/aashutosh-poudel/"}>
                     <Image src={LinkedinIcon} alt='linkedIcon'/>
                     
                 </Link>                

@@ -9,9 +9,9 @@ const projectsData = [
     title: "React Portfolio Website",
     description: "Portfolio website built using React.js and Tailwind CSS.",
     image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Next js"],
+    gitUrl: "https://github.com/samarpanpdl/portfolio",
+    previewUrl: "https://portfolio-orcin-theta-65.vercel.app/",
   },
   
   {
@@ -19,7 +19,7 @@ const projectsData = [
     title: "E-commerce Application",
     description: "E-commerce web application built with React, Django and TailwindCSS stack.",
     image: "/images/projects/3.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Django"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -28,7 +28,7 @@ const projectsData = [
     title: "Blogging Website",
     description: "Blogging website built with React and Tailwind CSS.",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
+    tag: ["All", "React"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -55,7 +55,9 @@ const ProjectsSection = () => {
     <h2 className='text:4xl font-bold text-[#ECEFF4]'>My Projects</h2>
     <div className='text-[#ECEFF4] flex flex-row justify-center items-center gap-2 py-6' >
         <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"}/>
-        <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"}/>
+        <ProjectTag onClick={handleTagChange} name="React" isSelected={tag === "React"}/>
+        <ProjectTag onClick={handleTagChange} name="Next js" isSelected={tag === "Next js"}/>
+        <ProjectTag onClick={handleTagChange} name="Django" isSelected={tag === "Django"}/>
 
     </div>
     <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12" id="projects">

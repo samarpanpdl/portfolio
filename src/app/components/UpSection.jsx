@@ -3,8 +3,12 @@ import React from 'react';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion";
+import Link from 'next/link'
 
 const UpSection = () => {
+  const gotoContact = ()=>{
+
+  }
   return (
     <section className="lg:py-16">
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-8 py-12 items-center'>
@@ -40,13 +44,16 @@ const UpSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
+            <Link href="#contact">
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className='px-6 py-3 w-full sm:w-fit rounded-full bg-white text-black font-medium hover:bg-slate-200 transition-colors'
+              onClick={gotoContact}
             >
               Hire Me
             </motion.button>
+            </Link>
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

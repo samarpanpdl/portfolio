@@ -12,7 +12,7 @@ export default function Home() {
         <Navbar/>
         <div className="container mx-auto mt-24 px-12 py-4">
         <UpSection/>
-        <AchievementSection/>
+        {/* <AchievementSection/> */}
         <AboutSection/>
         <ProjectsSection/>
         <EmailSection/>
